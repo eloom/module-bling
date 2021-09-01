@@ -28,4 +28,8 @@ class InstallData implements InstallDataInterface {
 	public function __construct(EavSetupFactory $eavSetupFactory) {
 		$this->eavSetupFactory = $eavSetupFactory;
 	}
+	
+	public function install(ModuleDataSetupInterface $setup,
+	                        ModuleContextInterface $context) {
+	}
 }
