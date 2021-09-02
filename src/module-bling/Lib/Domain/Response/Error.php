@@ -17,7 +17,7 @@ namespace Eloom\Bling\Lib\Domain\Response;
 
 class Error {
 	
-	private $removalPassive = [14];
+	private $removeCodes = [14];
 	
 	private $code;
 	
@@ -61,7 +61,7 @@ class Error {
 	}
 	
 	public function canRemove(): bool {
-		if (in_array($this->code, $this->removalPassive)) {
+		if (in_array($this->code, $this->removeCodes)) {
 			return true;
 		}
 		
