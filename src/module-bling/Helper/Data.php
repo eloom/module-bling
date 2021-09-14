@@ -25,8 +25,6 @@ class Data extends AbstractHelper {
 	
 	const XML_PATH_API_KEY = 'eloom_bling/general/api_key';
 	
-	const XML_PATH_ACCESS_TOKEN = 'eloom_bling/general/access_token';
-	
 	protected $storeManager;
 	
 	public function __construct(Context               $context,
@@ -43,12 +41,6 @@ class Data extends AbstractHelper {
 	
 	public function getApiKey($storeId = null) {
 		$value = $this->scopeConfig->getValue(self::XML_PATH_API_KEY, ScopeInterface::SCOPE_STORE, $storeId);
-		
-		return trim($value);
-	}
-	
-	public function getAccessToken($storeId = null) {
-		$value = $this->scopeConfig->getValue(self::XML_PATH_ACCESS_TOKEN, ScopeInterface::SCOPE_STORE, $storeId);
 		
 		return trim($value);
 	}
