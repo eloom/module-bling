@@ -22,8 +22,7 @@
   "prefer-stable" : true,
   "require": {
     "php": "~8.4",
-    "magento/framework": "103.0.*",
-    "eloom/module-payu-br": "dev-main"
+    "magento/framework": "103.0.*"
   },
   "license": [
     "OSL-3.0",
