@@ -1,6 +1,18 @@
 <?php
+/**
+* 
+* Bling para Magento 2
+* 
+* @category     elOOm
+* @package      Modulo Bling
+* @copyright    Copyright (c) 2026 elOOm (https://eloom.tech)
+* @version      1.0.0
+* @license      https://opensource.org/licenses/OSL-3.0
+* @license      https://opensource.org/licenses/AFL-3.0
+*
+*/
 \Magento\Framework\Component\ComponentRegistrar::register(
-	\Magento\Framework\Component\ComponentRegistrar::MODULE,
-	'Eloom_Bling',
-	__DIR__
+  \Magento\Framework\Component\ComponentRegistrar::MODULE,
+  'Eloom_Bling',
+  __DIR__
 );

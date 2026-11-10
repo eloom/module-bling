@@ -5,7 +5,7 @@
 * 
 * @category     elOOm
 * @package      Modulo Bling
-* @copyright    Copyright (c) 2021 elOOm (https://eloom.tech)
+* @copyright    Copyright (c) 2026 elOOm (https://eloom.tech)
 * @version      1.0.0
 * @license      https://opensource.org/licenses/OSL-3.0
 * @license      https://opensource.org/licenses/AFL-3.0
@@ -23,13 +23,13 @@ use Magento\Framework\Setup\ModuleDataSetupInterface;
 
 class InstallData implements InstallDataInterface {
 
-	private $eavSetupFactory;
+  private $eavSetupFactory;
 
-	public function __construct(EavSetupFactory $eavSetupFactory) {
-		$this->eavSetupFactory = $eavSetupFactory;
-	}
-	
-	public function install(ModuleDataSetupInterface $setup,
-	                        ModuleContextInterface $context) {
-	}
+  public function __construct(EavSetupFactory $eavSetupFactory) {
+    $this->eavSetupFactory = $eavSetupFactory;
+  }
+
+  public function install(ModuleDataSetupInterface $setup,
+                          ModuleContextInterface   $context) {
+  }
 }
